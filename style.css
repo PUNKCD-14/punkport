@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: orange;
+  color: purple;
+}
+
+header {
+  margin-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  filter: drop-shadow(10px) display flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 3.5rem;
+  color: burlywood;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+nav a {
+  font-size: 1.9rem;
+  color: aquamarine;
+  margin-left: 4.1rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  color: burlywood;
+  border-bottom: 3px solid burlywood;
+}
+@media (max-width: 995px) {
+  nav {
+    position: absolute;
+    display: none;
+    top: 0%;
+    right: 0;
+    width: 40%;
+    border-left: 3px solid red;
+    border-bottom: 3px solid red;
+    border-bottom-left-radius: 2rem;
+    padding: 1rem solid;
+    background-color: rgba;
+    border-top: 0.1rem solid blue;
+  }
+
+  nava.active {
+    display: block;
+  }
+
+  nav a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+  nav a:hover,
+  nav a.active {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid green;
+  }
+}
+
+section {
+  min-height: 100vh;
+  padding: 5rem 9% 5rem;
+}
+
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9rem;
+  background-color: rgb(106, 47, 245);
+}
+
+.Home Home-content h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+span {
+  color: darkgoldenrod;
+}
+
+.Home-content h3 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.Home-img {
+  border-radius: 50%;
+}
+
+.Home-img img {
+  position: relative;
+  width: 32vw;
+  border-radius: 50%;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.Home-img img:hover {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 4rem;
+  background-color: transparent;
+  border: 0.2rem solid brown;
+  font-size: 2rem;
+  border-radius: 50%rem;
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.3s ease;
+  color: white;
+}
+
+.social-icons a:hover {
+  color: black;
+  transform: scale(1.4) translateY(-5px);
+  background-color: ivory;
+  box-shadow: 0 0 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.9rem;
+  background-color: orange;
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: orange;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  border: 2px solid burlywood;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: burlywood;
+  background-color: orangered;
+  transform: scale3d(1.04);
+  box-shadow: 0 0 25px;
+}
+
+.typing-text {
+  font-size: 35px;
+  color: burlywood;
+  font-weight: 600;
+  min-width: 280px;
+}
+
+.typing-text span {
+  position: relative;
+}
+
+.typing-text span::before {
+  content: "Programmer and Software Developer";
+  color: orange;
+  animation: words 20s infinite;
+}
+
+.typing-text span::after {
+  content: "";
+  background-color: red;
+  position: absolute;
+  left: 0;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 4px solid red;
+  right: -4px;
+  animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 3px solid purple;
+  }
+}
+
+@keyframes words {
+  0%,
+  30% {
+    content: "Programmer and Software Developer";
+  }
+  21%,
+  40% {
+    content: "Software-Developer";
+  }
+  41%,
+  60% {
+    content: "Programmer";
+  }
+  61%,
+  80% {
+    content: "AI automation Designer";
+  }
+  81%,
+  100% {
+    content: "Web Developer";
+  }
+}
+
+@media (max-width: 1000px) {
+  .Home {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 995px) {
+  .Home {
+    flex-direction: column;
+    margin: 5rem 4rem;
+  }
+}
+
+.Home .Home-content h3 {
+  font-size: 2.5 rem;
+}
+
+.Home-content h1 {
+  font-size: 4.5rem;
+}
+
+.Home-img img {
+  width: 80vw;
+  margin-top: 5rem;
+}
