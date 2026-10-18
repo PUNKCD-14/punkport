@@ -8,8 +8,8 @@
 | **Module** | Web Development |
 | **Assignment** | Portfolio Website – Design, Build, and Deploy |
 | **Lecturer** | Mr Owami |
-| **Live site** | https://punkcd-14.github.io/YOUR-REPO-NAME/ |
-| **Repository** | https://github.com/PUNKCD-14/YOUR-REPO-NAME |
+| **Live site** | https://punkcd-14.github.io/punkport/ |
+| **Repository** | https://github.com/PUNKCD-14/punkport |
 
 ---
 
